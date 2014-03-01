@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rainbow Digi</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">About Us</string>
+    <string name="menu_devlpoer">Devloper</string>
+    <string name="menu_setalarm">Set Alarm</string>
+    <string name="widget_name">Rainbow Digi Clock Widget</string>
+
+</resources>

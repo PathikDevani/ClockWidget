@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_setalarm"
+        android:title="@string/menu_setalarm"/>
+    <item
+        android:id="@+id/menu_devlpoer"
+        android:title="@string/menu_devlpoer"/>
+    <item
+        android:id="@+id/menu_about"
+        android:title="@string/menu_settings"/>
+
+</menu>
