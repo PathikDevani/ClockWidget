@@ -1,17 +1,17 @@
 ClockWidget
 ===========
 
-In this project we creat one widget that show Time of our system. Time show in not plain color but combination of two color and we chang color in app.
+In this project we create one widget that show Time of our system. Time show in not plain color but combination of two color and we change color from app.
 
 
 ##shapes
 
-* Here We use all shapes store in  ```ClockWidget/src/com/spidren/shape``` .
+* Here We use all shapes that store in  ```ClockWidget/src/com/spidren/shape``` .
 
 
-##AlaramManager
+##AlarmManager
 
-* Here AlramManger class is use   ``` ClockWidget/src/com/spidren/code/AppSetAlarmPerMintie.java``` .
+* Here AlarmManager class is use in   ``` ClockWidget/src/com/spidren/code/AppSetAlarmPerMintie.java``` .
 
 
 And show all code and lern Itself.
