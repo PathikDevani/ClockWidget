@@ -10,10 +10,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-public class AppSetAlarmPerMintie {
-	public static final String TIME_UPDATE = "com.spidren.clockwidget.TIME_UPDATE";
+public class AppSetAlarmPerMinute {
+	
 	Context context;
-	public AppSetAlarmPerMintie(Context context)
+	public AppSetAlarmPerMinute(Context context)
 	{
 		this.context = context;
 	}
@@ -27,16 +27,16 @@ public class AppSetAlarmPerMintie {
 		setAlarmNextminit(calNext);
 	}
 	private void setAlarmNextminit(Calendar calNext) {
-		Intent intent = new Intent(context,Recevir.class);
-		intent.setAction(TIME_UPDATE);
+		Intent intent = new Intent();
+		intent.setAction(Receiver.TIME_UPDATE);
 		PendingIntent pendingintent = PendingIntent.getBroadcast(context, 2, intent, 0);
 		AlarmManager alarmMgr = (AlarmManager)context.getSystemService(context.ALARM_SERVICE);
 		alarmMgr.set(AlarmManager.RTC_WAKEUP, calNext.getTimeInMillis(), pendingintent);
 	}
 	public void stopAlarm()
 	{
-		Intent intent = new Intent(context,Recevir.class);
-		intent.setAction(TIME_UPDATE);
+		Intent intent = new Intent(context,Receiver.class);
+		intent.setAction(Receiver.TIME_UPDATE);
 		PendingIntent pendingintent = PendingIntent.getBroadcast(context, 2, intent, 0);
 		AlarmManager alarmMgr = (AlarmManager)context.getSystemService(context.ALARM_SERVICE);
 		alarmMgr.cancel(pendingintent);

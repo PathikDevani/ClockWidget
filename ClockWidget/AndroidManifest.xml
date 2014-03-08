@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.spidren.clockwidget"
-    android:versionCode="3"
-    android:versionName="1.0" 
-    android:installLocation="internalOnly">
+    android:installLocation="internalOnly"
+    android:versionCode="4"
+    android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -15,7 +15,9 @@
         android:normalScreens="true"
         android:resizeable="true"
         android:smallScreens="true" />
-    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -41,17 +43,13 @@
                 <action android:name="com.spidren.clockwidget.COLOR_UPDATE" />
                 <action android:name="android.intent.action.TIME_SET" />
                 <action android:name="com.spidren.clockwidget.APP_START" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
             </intent-filter>
 
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget" />
-        </receiver>
-        <receiver android:name="com.spidren.code.Recevir" >
-            <intent-filter>
-                <action android:name="com.spidren.clockwidget.TIME_UPDATE" />
-                <action android:name="android.intent.action.TIME_SET" />
-            </intent-filter>
         </receiver>
     </application>
 
